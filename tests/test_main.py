@@ -176,7 +176,7 @@ overweight_output_ = [3, 1, 9]
 
 
 def test_evaluate_bmi():
-    from bmi_calculator.src.overweight_count.main import evaluate_bmi
+    from src.overweight_count.main import evaluate_bmi
 
     for inp, actual_output in zip(data_, evaluate_bmi_outputs):
         expected_output = evaluate_bmi(inp)
@@ -187,7 +187,7 @@ def test_evaluate_bmi():
 
 
 def test_get_category_health_risk():
-    from bmi_calculator.src.overweight_count.main import get_category_health_risk
+    from src.overweight_count.main import get_category_health_risk
 
     for inp, actual_output in zip(bmi_data_, category_health_risk_output):
         expected_output = get_category_health_risk(inp)
@@ -196,7 +196,7 @@ def test_get_category_health_risk():
 
 
 def test_get_count_of_overweights():
-    from bmi_calculator.src.overweight_count.main import get_count_of_overweights
+    from src.overweight_count.main import get_count_of_overweights
 
     for inp, actual_output in zip(overweight_data_, overweight_output_):
         expected_output = get_count_of_overweights(inp)
